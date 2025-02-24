@@ -82,7 +82,7 @@
             let avis = document.getElementById('avis').value;
             if (avis.trim() !== "") {
                 let numeroFournisseur = "2250172369840"; // Remplace par le vrai numéro
-                let message = encodeURIComponent("Bonjour, voici mon avis : " + avis);
+                let message = encodeURIComponent("Bonsoir : " + avis);
                 let url = `https://wa.me/${numeroFournisseur}?text=${message}`;
                 window.open(url, '_blank');
             } else {
